@@ -1,0 +1,21 @@
+## Basic Permissions
+
+- The probability of accessing the file: owner of the file , user in a group that owns the file , or other that don't own the file depending on the permissions.
+- owner, user in a group and other may read , write , execute a binary file depending on the permissions.
+- r stands for read , w stands for write and x stands for execute and u stands for owner , g stands for user in a group , o stands for other each has 3bits and 1 bit for the type of the file so we have total 10bits to describe the permissions.
+- the type of the file can be defined as - means normal file, d means a directory , b means block device these are the devices that deals with data as a block device as datat are entered the memory as a block ex: harddesk , and c means character device deals with data by character by character ex: the keyboard, or the tty command. we have more files types that we will learn about them in future.
+- note that - in a bit means that the permission is not granted , permissions are organized as user-group-other , 3 bits for each that comes after the type of the file.
+- . at the end of the permissions means that selinux protect that file. we will learn about selinux later in the future
+- a number like 1 or more after the . in permssions means the link count of this file we will learn about is later. then comes the name of user , the name of group , the size of the file , the last access date for the file and the file name.
+- run `chmod o+w filename`to change a permission for other user as o stands for other, + and w as stands for write permission and the filename use - instead of + to remove a permission
+- when the file gets the color green it means that the file is executable file which means inside of it we can write code and the code will be executed if we call its directory in the command line. ex: run `./filenameofexecutablegreenfile`
+- we can run `chmod ugo-r filename` to combine user and group and other add and remove permissions. use letter a instead of ugo.
+- run `chmod u+w,o-wx file name` we use , to make combination with no spaces.
+- run `-x filname` , if we didn't state the users type it means this will be applied to all users types.
+- run `chmod -R go-rwx test/` if the file is a directory write -R option to apply the permissions to the directory and its files inside of it`
+- for a file the r means you can view it. the w means you cand edit and delete it and x means you can execute the file.
+- for a directory r means you can ls this directory . the w means you can remove the directory and add and remove files or directories to this directory and x means you can cd or ls -l to this directory.
+- run `chown username filename` to change the ownership for the user.
+- run `chown :groupname filename` to change the ownership for the group.
+- run `chown username:groupname filename` to change the ownership for the user and the group in the same time.
+- note that the system checks if you are the owner he will treat you with the permissions of the owner and if you a member of the group he will treat you with the permissions of the group and if you are other the system will treat you with the permissions of the others.
