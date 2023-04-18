@@ -24,7 +24,7 @@
 - disable security
 - create admin user and password
 - then start installation and after finishing installation , reboot your system and login to remotely control the system
-- now, run `ifconfig` and get the vm id `192.168.92.128`
-- go to your machine open the terminal and `ssh imohamed@192.168.92.128` and enter the password of imohamed and then you can access the vm machine remotely
+- now, run `ifconfig` and get the vm id `192.168.92.131`
+- go to your machine open the terminal and `ssh imohamed@192.168.92.131` and enter the password of imohamed and then you can access the vm machine remotely
 - on windows you can use a terminal emulator like `mobaxterm` that allows you to open many sessions
 - in linux I use `xterminal` emulator

@@ -12,4 +12,5 @@
 ### The tools we need
 
 - virtualization tool like vm
-- installation media of redhat or centos
+- installation media of redhat or centos it will work as a server that has esx.
+- in 3rd track we will need ubunto server or debian

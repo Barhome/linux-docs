@@ -1,6 +1,6 @@
 ## file system
 
-- use command `tree` to show the current directory content as a tree
+- use command `tree` to show the current directory content as a tree , this command needs to be added on the system.
 - use mkdir to create a directory. you can't name two directories with the same name. you can define the path to make directory to create directory on this path , without path it created in the same directory.
 - use cp to copy a file with a new name in the same directory or write the path to other directories `cp file1 file2 or cp file1 /tmp/file2`
 - use cp to copy a directory to another direcory `cp direcory1/ directory2/` this won't work as cp is used to copy files not directories so use -r in the command `cp -r directory1/ directory2/` it is like asking the command to copy the files inside of the directory

@@ -13,7 +13,7 @@
 - use shift+pgUP or shift+pgDn to move up and down
 - use ctrl+z to stop the terminal loading temporarily and use `bg` to bring the loading job in the background again
 - use ctrl+c to terminate the command and start new line or to end loading command resaults completely.
-- use ctrl+s to lock your screen so that what your write doesn't show up and to show it and to unlock your screen use ctrl q
+- use ctrl+s to lock your screen so that what your write doesn't show up and to show it and to unlock your screen use ctrl+q
 - use command `reboot` or `shutdown -r now` or `systemctl reboot` or `init 6` to reboot your machine
 - use command `shutdown -h now` or `systemctl poweroff` or `poweroff` or `init 0` to shudown the machine completely.
 - use ; to write and execute two commands on the terminals
